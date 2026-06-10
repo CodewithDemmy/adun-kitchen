@@ -1,0 +1,49 @@
+.reserve {
+  padding: 6rem 4rem;
+  background: var(--clay-light);
+  text-align: center;
+}
+.reserve .section-label { justify-content: center; }
+.reserve .section-title { font-size: clamp(2.5rem, 5vw, 4rem); }
+.reserve .section-title em { display: block; }
+.reserve-desc {
+  color: var(--smoke);
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+.reserve-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.reserve-form input,
+.reserve-form select {
+  flex: 1;
+  min-width: 160px;
+  padding: 0.85rem 1.2rem;
+  border: 1px solid rgba(193,68,14,0.3);
+  background: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink);
+  outline: none;
+  appearance: none;
+}
+.reserve-form input:focus,
+.reserve-form select:focus { border-color: var(--clay); }
+.reserve-success {
+  background: var(--clay);
+  color: #fff;
+  padding: 1.2rem 2rem;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,56 @@
+.about {
+  padding: 7rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.about-image-wrap {
+  position: relative;
+  aspect-ratio: 4/5;
+  background: var(--clay-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-image-wrap::after {
+  content: '';
+  position: absolute;
+  top: 1.5rem; left: 1.5rem;
+  right: -1.5rem; bottom: -1.5rem;
+  border: 1px solid var(--clay);
+  z-index: -1;
+}
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--smoke);
+  margin-bottom: 1.5rem;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  margin-top: 0.5rem;
+}
+.stat strong {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--clay);
+}
+.stat span {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--smoke);
+}

@@ -1,0 +1,96 @@
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 3rem 5rem 4rem;
+  position: relative;
+}
+.hero-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.hero-label::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background: var(--clay);
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--clay);
+}
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--smoke);
+  max-width: 420px;
+  margin-bottom: 3rem;
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.hero-right {
+  background: var(--clay-light);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-badge {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 1.2rem 1.6rem;
+}
+.hero-badge strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+.hero-badge span {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.hero-pattern {
+  position: absolute;
+  top: 0; right: 0;
+  width: 120px; height: 120px;
+  opacity: 0.08;
+  background-image: repeating-conic-gradient(var(--clay) 0% 25%, transparent 0% 50%);
+  background-size: 20px 20px;
+}

@@ -1,0 +1,48 @@
+.experience {
+  padding: 7rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.exp-text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--smoke);
+  margin-bottom: 0.5rem;
+}
+.exp-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.exp-card {
+  background: var(--clay-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.exp-card--tall {
+  grid-row: span 2;
+  background: var(--clay);
+}
+.exp-card--dark { background: var(--ink); }
+.exp-card-icon { font-size: 2rem; }
+.exp-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.exp-card--tall h4,
+.exp-card--tall p,
+.exp-card--dark h4,
+.exp-card--dark p {
+  color: var(--cream);
+}
+.exp-card p {
+  font-size: 0.82rem;
+  color: var(--smoke);
+  line-height: 1.6;
+}
